@@ -10,7 +10,7 @@ public class ShopStock {
         this.productList = productList;
     }
 
-    List<Product> executeFilteringStrategy(FilteringStrategy filteringStrategy) {
+    public List<Product> executeFilteringStrategy(FilteringStrategy filteringStrategy) {
         List<Product> filteredProducts = new ArrayList<>();
         for(Product p : productList) {
             if (filteringStrategy.filter(p)) {
